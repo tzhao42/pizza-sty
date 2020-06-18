@@ -1,14 +1,10 @@
-\ProvidesPackage{pizza}[2020/06/17]
+\ProvidesPackage{alan}[2020/06/17]
 
-\usepackage{amsmath,amsthm,amsfonts,amssymb}
-
-% TODO: \usepackage{mathtools,amsthm,amsfonts,amssymb}
-
+\usepackage{mathtools,amsthm,amsfonts,amssymb}
 \usepackage[margin=1in]{geometry}
-\usepackage[shortlabels]{enumitem}
 \usepackage{hyperref}
 \usepackage[noabbrev,capitalize]{cleveref}
-
+\usepackage[shortlabels]{enumitem}
 \crefname{equation}{}{}
 
 \newtheorem{theorem}{Theorem}
@@ -21,3 +17,109 @@
 
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
+
+%%% from chezbase.sty
+
+% Sets
+\newcommand{\FF}{\mathbb F}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\CC}{\mathbb C}
+\newcommand{\HH}{\mathbb H}
+
+\newcommand{\intersect}{\cap}
+\newcommand{\bigintersect}{\bigcap}
+\newcommand{\union}{\cup}
+\newcommand{\bigunion}{\bigcup}
+
+% General
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\renewcommand{\Re}{\operatorname{Re}} % can't use DeclareMathOperator because already defined
+\renewcommand{\Im}{\operatorname{Im}}
+\DeclareMathOperator{\cis}{cis}
+
+% Combinatorics / Statistics
+\newcommand{\EE}{\mathbb E}
+\newcommand{\PP}{\mathbb P}
+\DeclareMathOperator{\Var}{Var}
+
+% Geometry
+\newcommand{\dg}{^\circ}
+\newcommand{\seg}[1]{\overrightarrow{#1}}
+\newcommand{\ray}[1]{\overrightarrow{#1}}
+\newcommand{\dang}{\measuredangle}
+
+% Number Theory
+\newcommand{\Mod}[1]{\ (\text{mod}\ #1)}
+\renewcommand{\mod}[1]{\ \text{mod}\ #1}
+\DeclareMathOperator*{\lcm}{lcm}
+
+% Calculus
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\div}{div}
+\DeclareMathOperator{\curl}{curl}
+
+% Algebra
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Img}{Im}
+
+
+\newcommand{\iso}{\cong}
+\newcommand{\inv}{^{-1}}
+
+\renewcommand{\ker}{\operatorname{ker}} % already defined
+
+
+% Algebraic Geometry
+\newcommand{\VV}{\mathcal V}
+\newcommand{\II}{\mathcal I}
+\DeclareMathOperator{\Spec}{Spec}
+
+% Artin
+
+\DeclareMathOperator{\cof}{cof}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\Span}{Span}
+\DeclareMathOperator{\trace}{trace}
+\DeclareMathOperator{\Perm}{Perm}
+
+\newcommand{\x}{\times}
+\newcommand{\tand}{\text{ and }}
+
+\newcommand{\fancyG}{\mathcal{G}}
+\newcommand{\fancyH}{\mathcal{H}}
+
+\newcommand{\boldB}{\mathbf{B}}
+\newcommand{\boldC}{\mathbf{C}}
+\newcommand{\OO}{\mathbb{O}}
+
+\newcommand{\AAA}{\mathbb A}
+\DeclareMathOperator{\diam}{diam}
+
+% 6.436
+
+\newcommand{\MF}{\mathcal{F}}
+\newcommand{\MC}{\mathcal{C}}
+\newcommand{\MH}{\mathcal{H}}
+\newcommand{\MB}{\mathcal{B}}
+\newcommand{\MG}{\mathcal{G}}
+\newcommand{\MN}{\mathcal{N}}
+
+\DeclareMathOperator{\dU}{dU}
+\DeclareMathOperator{\Ber}{Ber}
+\DeclareMathOperator{\Bin}{Bin}
+\DeclareMathOperator{\Geo}{Geo}
+\DeclareMathOperator{\Pois}{Pois}
+\DeclareMathOperator{\Pow}{Pow}
+
+\DeclareMathOperator{\Exp}{Exp}
+
+\DeclareMathOperator{\var}{var}
+\DeclareMathOperator{\cov}{cov}
+
+\DeclareMathOperator{\distrib}{\stackrel{d}{=}}
