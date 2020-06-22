@@ -20,6 +20,17 @@
 
 %%% from chezbase.sty
 
+% Syntactically-named delimiters
+\DeclarePairedDelimiter{\braces}{\lbrace}{\rbrace}
+\DeclarePairedDelimiter{\parens}{\lparen}{\rparen}
+\DeclarePairedDelimiter{\brackets}{\lbrack}{\rbrack}
+\DeclarePairedDelimiter{\angles}{\langle}{\rangle}
+\DeclarePairedDelimiter{\verts}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\Verts}{\lVert}{\rVert}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\set}{\lbrace}{\rbrace}
+
 % Sets
 \newcommand{\FF}{\mathbb F}
 \newcommand{\NN}{\mathbb N}
@@ -59,7 +70,7 @@
 
 % Calculus
 \DeclareMathOperator{\grad}{grad}
-\DeclareMathOperator{\div}{div}
+\renewcommand{\div}{\operatorname{div}}
 \DeclareMathOperator{\curl}{curl}
 
 % Algebra
