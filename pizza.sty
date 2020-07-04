@@ -1,24 +1,49 @@
 \ProvidesPackage{pizza}[2020/06/17]
 
 \usepackage{mathtools,amsthm,amsfonts,amssymb}
+\usepackage{framed} % for better environments
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \usepackage[noabbrev,capitalize]{cleveref}
 \usepackage[shortlabels]{enumitem}
 \crefname{equation}{}{}
 
-\newtheorem{theorem}{Theorem}
-\newtheorem{proposition}{Proposition}
-\newtheorem{lemma}{Lemma}
-\newtheorem{corollary}{Corollary}
+%%% Better environments
+
+% avoid recursive environment definitions
+\newtheorem{pizza-theorem}{Theorem}
+\newtheorem{pizza-proposition}{Proposition}
+\newtheorem{pizza-lemma}{Lemma}
+\newtheorem{pizza-corollary}{Corollary}
 
 \theoremstyle{definition}
-\newtheorem{definition}{Definition}
+\newtheorem{pizza-definition}{Definition}
 
 \theoremstyle{remark}
-\newtheorem*{remark}{Remark}
+\newtheorem*{remark}{Remark} % remark doesn't need a leftbar
 
-%%% from chezbase.sty
+% leftbar environments
+\renewenvironment{theorem}
+{\begin{leftbar}\begin{pizza-theorem}}
+{\end{pizza-theorem}\end{leftbar}}
+
+\renewenvironment{proposition}
+{\begin{leftbar}\begin{pizza-proposition}}
+{\end{pizza-proposition}\end{leftbar}}
+
+\renewenvironment{lemma}
+{\begin{leftbar}\begin{pizza-lemm}}
+{\end{pizza-lemma}\end{leftbar}}
+
+\renewenvironment{corollary}
+{\begin{leftbar}\begin{pizza-corollary}}
+{\end{pizza-corollary}\end{leftbar}}
+
+\renewenvironment{definition}
+{\begin{leftbar}\begin{pizza-definition}}
+{\end{pizza-definition}\end{leftbar}}
+
+%%% From chezbase.sty
 
 % Syntactically-named delimiters
 \DeclarePairedDelimiter{\braces}{\lbrace}{\rbrace}
