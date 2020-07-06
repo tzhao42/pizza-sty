@@ -11,18 +11,25 @@
 %%% Better environments
 
 % avoid recursive environment definitions
+
+\theoremstyle{definition} % no italics
+
 \newtheorem{pizza-theorem}{Theorem}
 \newtheorem{pizza-proposition}{Proposition}
 \newtheorem{pizza-lemma}{Lemma}
 \newtheorem{pizza-corollary}{Corollary}
-
-\theoremstyle{definition}
+\newtheorem{pizza-problem}{Problem}
 \newtheorem{pizza-definition}{Definition}
 
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark} % remark doesn't need a leftbar
+\theoremstyle{remark} % keep remark what it is
+\newtheorem*{remark}{Remark}
+
+% solution
+
+\newenvironment{solution}{\begin{proof}[Solution.]}{\end{proof}}
 
 % leftbar environments
+
 \newenvironment{theorem}
 {\begin{leftbar}\begin{pizza-theorem}}
 {\end{pizza-theorem}\end{leftbar}}
@@ -43,6 +50,9 @@
 {\begin{leftbar}\begin{pizza-definition}}
 {\end{pizza-definition}\end{leftbar}}
 
+\newenvironment{problem}
+{\begin{leftbar}\begin{pizza-problem}}
+{\end{pizza-problem}\end{leftbar}}
 %%% From chezbase.sty
 
 % Syntactically-named delimiters
