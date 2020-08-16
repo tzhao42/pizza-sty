@@ -21,6 +21,7 @@
 \newtheorem{pizza-problem}{Problem}
 \newtheorem{pizza-definition}{Definition}
 \newtheorem{pizza-fact}{Fact}
+\newtheorem{pizza-example}{Example}
 
 \theoremstyle{remark} % keep remark what it is
 \newtheorem*{remark}{Remark}
@@ -58,6 +59,10 @@
 \newenvironment{fact}
 {\begin{leftbar}\begin{pizza-fact}}
 {\end{pizza-fact}\end{leftbar}}
+
+\newenvironment{example}
+{\begin{leftbar}\begin{pizza-example}}
+{\end{pizza-example}\end{leftbar}}
 
 %%% From chezbase.sty
 
@@ -150,6 +155,9 @@
 
 \newcommand{\AAA}{\mathbb A}
 \DeclareMathOperator{\diam}{diam}
+
+% LADR
+\newcommand{\ML}{\mathcal{L}}
 
 % 6.436
 
