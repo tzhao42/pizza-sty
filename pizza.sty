@@ -1,4 +1,4 @@
-\ProvidesPackage{pizza}[2020/06/17]
+\ProvidesPackage{pizza}[2021/06/17]
 
 \usepackage{mathtools,amsthm,amsfonts,amssymb}
 \usepackage{framed} % for better environments
@@ -13,7 +13,6 @@
 % avoid recursive environment definitions
 
 \theoremstyle{definition} % no italics
-
 \newtheorem{pizza-theorem}{Theorem}
 \newtheorem{pizza-proposition}{Proposition}
 \newtheorem{pizza-lemma}{Lemma}
@@ -66,6 +65,36 @@
 
 %%% From chezbase.sty
 
+% mathbbs
+%% \BB and \MM reserved
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\EE}{\mathbb{E}}
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\HH}{\mathbb{H}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\OO}{\mathbb{O}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+
+% mathbfs
+\newcommand{\BB}{\mathbf{B}}
+\newcommand{\BC}{\mathbf{C}}
+
+% mathcals
+\newcommand{\MB}{\mathcal{B}}
+\newcommand{\MC}{\mathcal{C}}
+\newcommand{\MF}{\mathcal{F}}
+\newcommand{\MG}{\mathcal{G}}
+\newcommand{\MH}{\mathcal{H}}
+\newcommand{\MI}{\mathcal{I}}
+\newcommand{\ML}{\mathcal{L}}
+\newcommand{\MM}{\mathcal{M}}
+\newcommand{\MN}{\mathcal{N}}
+\newcommand{\MP}{\mathcal{P}}
+\newcommand{\MV}{\mathcal V}
+
 % Syntactically-named delimiters
 \DeclarePairedDelimiter{\braces}{\lbrace}{\rbrace}
 \DeclarePairedDelimiter{\parens}{\lparen}{\rparen}
@@ -78,14 +107,6 @@
 \DeclarePairedDelimiter{\set}{\lbrace}{\rbrace}
 
 % Sets
-\newcommand{\FF}{\mathbb F}
-\newcommand{\NN}{\mathbb N}
-\newcommand{\ZZ}{\mathbb Z}
-\newcommand{\QQ}{\mathbb Q}
-\newcommand{\RR}{\mathbb R}
-\newcommand{\CC}{\mathbb C}
-\newcommand{\HH}{\mathbb H}
-
 \newcommand{\intersect}{\cap}
 \newcommand{\bigintersect}{\bigcap}
 \newcommand{\union}{\cup}
@@ -99,9 +120,17 @@
 \DeclareMathOperator{\cis}{cis}
 
 % Combinatorics / Statistics
-\newcommand{\EE}{\mathbb E}
-\newcommand{\PP}{\mathbb P}
-\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\var}{var}
+\DeclareMathOperator{\cov}{cov}
+%% Distributions
+\newcommand{\distrib}{\stackrel{d}{=}}
+\newcommand{\dU}{\text{dU}}
+\newcommand{\Ber}{\text{Ber}}
+\newcommand{\Bin}{\text{Bin}}
+\newcommand{\Geo}{\text{Geo}}
+\newcommand{\Pois}{\text{Pois}}
+\newcommand{\Pow}{\text{Pow}}
+\newcommand{\Exp}{\text{Exp}}
 
 % Geometry
 \newcommand{\dg}{^\circ}
@@ -119,67 +148,23 @@
 \renewcommand{\div}{\operatorname{div}}
 \DeclareMathOperator{\curl}{curl}
 
-% Algebra
-\DeclareMathOperator{\ord}{ord}
-\DeclareMathOperator{\im}{im}
+% Linear Algebra
 \DeclareMathOperator{\Ker}{Ker}
 \DeclareMathOperator{\Img}{Im}
 
+% Abstract Algebra
+\DeclareMathOperator{\ord}{ord}
 \newcommand{\iso}{\cong}
 \newcommand{\inv}{^{-1}}
-
-\renewcommand{\ker}{\operatorname{ker}} % already defined
-
-% Algebraic Geometry
-\newcommand{\VV}{\mathcal V}
-\newcommand{\II}{\mathcal I}
-\DeclareMathOperator{\Spec}{Spec}
-
-%%% Better Macros
+%% Artin
+\DeclareMathOperator{\cof}{cof}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\Span}{Span}
+\DeclareMathOperator{\Perm}{Perm}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\trace}{trace}
 
 % Text
 \newcommand{\tand}{\text{ and }}
 \newcommand{\tsuchthat}{\text{ such that }}
-
-% Artin
-
-\DeclareMathOperator{\cof}{cof}
-\DeclareMathOperator{\sign}{sign}
-\DeclareMathOperator{\Span}{Span}
-\DeclareMathOperator{\trace}{trace}
-\DeclareMathOperator{\Perm}{Perm}
-
-\newcommand{\boldB}{\mathbf{B}}
-\newcommand{\boldC}{\mathbf{C}}
-\newcommand{\OO}{\mathbb{O}}
-
-\newcommand{\AAA}{\mathbb A}
-\DeclareMathOperator{\diam}{diam}
-
-% LADR
-\newcommand{\ML}{\mathcal{L}}
-
-% 6.436
-
-\newcommand{\MF}{\mathcal{F}}
-\newcommand{\MC}{\mathcal{C}}
-\newcommand{\MH}{\mathcal{H}}
-\newcommand{\MB}{\mathcal{B}}
-\newcommand{\MG}{\mathcal{G}}
-\newcommand{\MN}{\mathcal{N}}
-\newcommand{\MP}{\mathcal{P}}
-
-\DeclareMathOperator{\dU}{dU}
-\DeclareMathOperator{\Ber}{Ber}
-\DeclareMathOperator{\Bin}{Bin}
-\DeclareMathOperator{\Geo}{Geo}
-\DeclareMathOperator{\Pois}{Pois}
-\DeclareMathOperator{\Pow}{Pow}
-
-\DeclareMathOperator{\Exp}{Exp}
-
-\DeclareMathOperator{\var}{var}
-\DeclareMathOperator{\cov}{cov}
-
-\DeclareMathOperator{\distrib}{\stackrel{d}{=}}
 
