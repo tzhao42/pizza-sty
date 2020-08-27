@@ -29,6 +29,7 @@
 
 \newenvironment{solution}{\begin{proof}[Solution.]}{\end{proof}}
 \newenvironment{proof-sketch}{\begin{proof}[Proof sketch.]}{\end{proof}}
+\newenvironment{solution-sketch}{\begin{proof}[Solution sketch.]}{\end{proof}}
 
 % leftbar environments
 
@@ -66,35 +67,89 @@
 
 %%% From chezbase.sty
 
-% mathbbs
-%% \BB and \MM reserved
-\newcommand{\CC}{\mathbb{C}}
-\newcommand{\EE}{\mathbb{E}}
-\newcommand{\FF}{\mathbb{F}}
-\newcommand{\HH}{\mathbb{H}}
-\newcommand{\NN}{\mathbb{N}}
-\newcommand{\OO}{\mathbb{O}}
-\newcommand{\PP}{\mathbb{P}}
-\newcommand{\QQ}{\mathbb{Q}}
-\newcommand{\RR}{\mathbb{R}}
-\newcommand{\ZZ}{\mathbb{Z}}
+% mathbbs (B)
+\newcommand{\BA}{\mathbb{A}}
+\newcommand{\BB}{\mathbb{B}}
+\newcommand{\BC}{\mathbb{C}}
+\newcommand{\BD}{\mathbb{D}}
+\newcommand{\BE}{\mathbb{E}}
+\newcommand{\BF}{\mathbb{F}}
+\newcommand{\BG}{\mathbb{G}}
+\newcommand{\BH}{\mathbb{H}}
+\newcommand{\BI}{\mathbb{I}}
+\newcommand{\BJ}{\mathbb{J}}
+\newcommand{\BK}{\mathbb{K}}
+\newcommand{\BL}{\mathbb{L}}
+\newcommand{\BM}{\mathbb{M}}
+\newcommand{\BN}{\mathbb{N}}
+\newcommand{\BO}{\mathbb{O}}
+\newcommand{\BP}{\mathbb{P}}
+\newcommand{\BQ}{\mathbb{Q}}
+\newcommand{\BR}{\mathbb{R}}
+\newcommand{\BS}{\mathbb{S}}
+\newcommand{\BT}{\mathbb{T}}
+\newcommand{\BU}{\mathbb{U}}
+\newcommand{\BV}{\mathbb{V}}
+\newcommand{\BW}{\mathbb{W}}
+\newcommand{\BX}{\mathbb{X}}
+\newcommand{\BY}{\mathbb{Y}}
+\newcommand{\BZ}{\mathbb{Z}}
 
-% mathbfs
-\newcommand{\BB}{\mathbf{B}}
-\newcommand{\BC}{\mathbf{C}}
+% mathbfs (F)
+\newcommand{\FA}{\mathbf{A}}
+\newcommand{\FB}{\mathbf{B}}
+\newcommand{\FC}{\mathbf{C}}
+\newcommand{\FD}{\mathbf{D}}
+\newcommand{\FE}{\mathbf{E}}
+\newcommand{\FF}{\mathbf{F}}
+\newcommand{\FG}{\mathbf{G}}
+\newcommand{\FH}{\mathbf{H}}
+\newcommand{\FI}{\mathbf{I}}
+\newcommand{\FJ}{\mathbf{J}}
+\newcommand{\FK}{\mathbf{K}}
+\newcommand{\FL}{\mathbf{L}}
+\newcommand{\FM}{\mathbf{M}}
+\newcommand{\FN}{\mathbf{N}}
+\newcommand{\FO}{\mathbf{O}}
+\newcommand{\FP}{\mathbf{P}}
+\newcommand{\FQ}{\mathbf{Q}}
+\newcommand{\FR}{\mathbf{R}}
+\newcommand{\FS}{\mathbf{S}}
+\newcommand{\FT}{\mathbf{T}}
+\newcommand{\FU}{\mathbf{U}}
+\newcommand{\FV}{\mathbf{V}}
+\newcommand{\FW}{\mathbf{W}}
+\newcommand{\FX}{\mathbf{X}}
+\newcommand{\FY}{\mathbf{Y}}
+\newcommand{\FZ}{\mathbf{Z}}
 
-% mathcals
+% mathcals (M)
+\newcommand{\MA}{\mathcal{A}}
 \newcommand{\MB}{\mathcal{B}}
 \newcommand{\MC}{\mathcal{C}}
+\newcommand{\MD}{\mathcal{D}}
+\newcommand{\ME}{\mathcal{E}}
 \newcommand{\MF}{\mathcal{F}}
 \newcommand{\MG}{\mathcal{G}}
 \newcommand{\MH}{\mathcal{H}}
 \newcommand{\MI}{\mathcal{I}}
+\newcommand{\MJ}{\mathcal{J}}
+\newcommand{\MK}{\mathcal{K}}
 \newcommand{\ML}{\mathcal{L}}
 \newcommand{\MM}{\mathcal{M}}
 \newcommand{\MN}{\mathcal{N}}
+\newcommand{\MO}{\mathcal{O}}
 \newcommand{\MP}{\mathcal{P}}
-\newcommand{\MV}{\mathcal V}
+\newcommand{\MQ}{\mathcal{Q}}
+\newcommand{\MR}{\mathcal{R}}
+\newcommand{\MS}{\mathcal{S}}
+\newcommand{\MT}{\mathcal{T}}
+\newcommand{\MU}{\mathcal{U}}
+\newcommand{\MV}{\mathcal{V}}
+\newcommand{\MW}{\mathcal{W}}
+\newcommand{\MX}{\mathcal{X}}
+\newcommand{\MY}{\mathcal{Y}}
+\newcommand{\MZ}{\mathcal{Z}}
 
 % Syntactically-named delimiters
 \DeclarePairedDelimiter{\braces}{\lbrace}{\rbrace}
@@ -150,8 +205,9 @@
 \DeclareMathOperator{\curl}{curl}
 
 % Linear Algebra
-\DeclareMathOperator{\Ker}{Ker}
-\DeclareMathOperator{\Img}{Im}
+\DeclareMathOperator{\Ker}{Ker} % kernel
+\DeclareMathOperator{\Img}{Im} % image
+\DeclareMathOperator{\Mat}{Mat} % matrix
 
 % Abstract Algebra
 \DeclareMathOperator{\ord}{ord}
