@@ -2,6 +2,7 @@
 
 \usepackage{mathtools,amsthm,amsfonts,amssymb}
 \usepackage{framed} % for better environments
+\usepackage{bbm} % for indicator variables
 % \usepackage{parskip} % for better paragraphs
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
@@ -178,7 +179,8 @@
 \renewcommand{\Im}{\operatorname{Im}}
 \DeclareMathOperator{\cis}{cis}
 
-% Combinatorics / Statistics
+% Probability / Combinatorics / Statistics
+\newcommand{\ind}[1]{\mathbbm{1}\left[#1\right]}
 \DeclareMathOperator{\var}{var}
 \DeclareMathOperator{\cov}{cov}
 %% Distributions
