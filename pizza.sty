@@ -15,6 +15,7 @@
 % avoid recursive environment definitions
 
 \theoremstyle{definition} % no italics
+% numbered
 \newtheorem{pizza-theorem}{Theorem}
 \newtheorem{pizza-proposition}{Proposition}
 \newtheorem{pizza-lemma}{Lemma}
@@ -23,6 +24,15 @@
 \newtheorem{pizza-definition}{Definition}
 \newtheorem{pizza-fact}{Fact}
 \newtheorem{pizza-example}{Example}
+% unnumbered
+\newtheorem*{pizza-theorem*}{Theorem}
+\newtheorem*{pizza-proposition*}{Proposition}
+\newtheorem*{pizza-lemma*}{Lemma}
+\newtheorem*{pizza-corollary*}{Corollary}
+\newtheorem*{pizza-problem*}{Problem}
+\newtheorem*{pizza-definition*}{Definition}
+\newtheorem*{pizza-fact*}{Fact}
+\newtheorem*{pizza-example*}{Example}
 
 \theoremstyle{remark} % keep remark what it is
 \newtheorem*{remark}{Remark}
@@ -34,7 +44,7 @@
 \newenvironment{solution-sketch}{\begin{proof}[Solution sketch.]}{\end{proof}}
 
 % leftbar environments
-
+%% numbered
 \newenvironment{theorem}
 {\begin{leftbar}\begin{pizza-theorem}}
 {\end{pizza-theorem}\end{leftbar}}
@@ -66,6 +76,39 @@
 \newenvironment{example}
 {\begin{leftbar}\begin{pizza-example}}
 {\end{pizza-example}\end{leftbar}}
+
+%% unnumbered
+\newenvironment{theorem*}
+{\begin{leftbar}\begin{pizza-theorem*}}
+{\end{pizza-theorem*}\end{leftbar}}
+
+\newenvironment{proposition*}
+{\begin{leftbar}\begin{pizza-proposition*}}
+{\end{pizza-proposition*}\end{leftbar}}
+
+\newenvironment{lemma*}
+{\begin{leftbar}\begin{pizza-lemma*}}
+{\end{pizza-lemma*}\end{leftbar}}
+
+\newenvironment{corollary*}
+{\begin{leftbar}\begin{pizza-corollary*}}
+{\end{pizza-corollary*}\end{leftbar}}
+
+\newenvironment{definition*}
+{\begin{leftbar}\begin{pizza-definition*}}
+{\end{pizza-definition*}\end{leftbar}}
+
+\newenvironment{problem*}
+{\begin{leftbar}\begin{pizza-problem*}}
+{\end{pizza-problem*}\end{leftbar}}
+
+\newenvironment{fact*}
+{\begin{leftbar}\begin{pizza-fact*}}
+{\end{pizza-fact*}\end{leftbar}}
+
+\newenvironment{example*}
+{\begin{leftbar}\begin{pizza-example*}}
+{\end{pizza-example*}\end{leftbar}}
 
 %%% From chezbase.sty
 
